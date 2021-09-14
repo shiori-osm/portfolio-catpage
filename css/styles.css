@@ -210,7 +210,7 @@ img {
     padding: 30px;
   }
   .header-sp-menu {
-    display: inline-block;
+    z-index: 1;
     width: 36px;
     height: 32px;
     cursor: pointer;
@@ -222,7 +222,7 @@ img {
     display: inline-block;
     width: 100%;
     height: 4px;
-    background-color: #000;
+    background-color: #9b6e68;
     position: absolute;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -231,12 +231,13 @@ img {
     top: 0;
   }
   .header-sp-menu-line-middle {
-    top: 14px;
+    top: 15px;
   }
   .header-sp-menu-line-bottom {
-    bottom: 0;
+    top: 30px;
   }
   .header-sp-nav {
+    z-index: 0;
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -244,8 +245,17 @@ img {
     -webkit-transition: 0.7s;
     transition: 0.7s;
     background-color: #E19186;
-    opacity: 0.5;
+    opacity: 0.9;
     text-align: center;
+  }
+  .header-sp-nav-list {
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .header-sp-nav-list-item {
+    margin-top: 100px;
+    margin-bottom: 30px;
   }
   .header-sp .open span:nth-of-type(1) {
     top: 14px;
