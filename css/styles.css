@@ -37,20 +37,20 @@ img {
 .header-title {
   font-size: 3em;
   font-weight: bold;
-  color: #E3CAC3;
+  color: #E19186;
   position: absolute;
-  border: 1px solid #E3CAC3;
+  border: 1px solid #E19186;
   padding: 30px;
 }
 .header-nav {
   position: absolute;
   top: 30px;
-  right: 30px;
+  right: 0;
 }
 .header-nav-list {
-  font-size: 2em;
+  font-size: 1.2em;
   font-weight: bold;
-  color: #A97F50;
+  color: #E19186;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,22 +111,22 @@ img {
 }
 
 .contact {
-  max-width: 90%;
+  max-width: 80%;
   margin: auto;
   padding: 60px 0;
 }
 .contact-form {
-  width: 100%;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   line-height: 2.5em;
 }
 .contact-form-p {
-  width: 20%;
+  width: 30%;
 }
 .contact-form-input {
-  width: 80%;
+  width: 70%;
   margin-bottom: 2%;
 }
 .contact-form-btn {
@@ -141,7 +141,8 @@ img {
   transition: all 0.5s;
 }
 .contact-form-btn-btn:hover {
-  background-color: pink;
+  color: #fff;
+  background-color: #E19186;
 }
 
 .footer {
@@ -165,7 +166,11 @@ img {
     width: 100%;
   }
   .service-flex-container-desc {
-    padding: 5%;
+    width: 100%;
+    padding: 5% 0;
+  }
+  .service-flex-container-desc-title {
+    margin-bottom: 5%;
   }
   .service-flex-container2 {
     -webkit-box-orient: vertical;
@@ -200,8 +205,8 @@ img {
     text-align: center;
     font-size: 2em;
     font-weight: bold;
-    color: #E3CAC3;
-    border: 1px solid #E3CAC3;
+    color: #E19186;
+    border: 1px solid #E19186;
     padding: 30px;
   }
   .header-sp-menu {
@@ -231,6 +236,16 @@ img {
   .header-sp-menu-line-bottom {
     bottom: 0;
   }
+  .header-sp-nav-list {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    background-color: #E19186;
+    text-align: center;
+  }
   .header-sp .open span:nth-of-type(1) {
     top: 14px;
     -webkit-transform: rotate(45deg);
@@ -250,10 +265,7 @@ img {
   .header-sp-nav-list {
     font-size: 2em;
     font-weight: bold;
-    color: #A97F50;
-  }
-  .header-sp-nav-list-item {
-    margin: 5% 0;
+    color: #E19186;
   }
 
   .about-images {

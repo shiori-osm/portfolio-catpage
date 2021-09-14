@@ -1,7 +1,11 @@
 "use strict"
 {
-const target = document.getElementById("menu");
-target.addEventListener('click', () => {
-  target.classList.toggle('open');
-});
+  const menu = document.getElementById("menu");
+  const nav = document.getElementById("nav");
+
+  menu.addEventListener('click', () => {
+    menu.classList.toggle('open');
+    nav.classList.toggle("slide");
+
+  });
 }
