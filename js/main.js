@@ -6,6 +6,5 @@
   menu.addEventListener('click', () => {
     menu.classList.toggle('open');
     nav.classList.toggle("slide");
-
   });
 }
