@@ -151,6 +151,10 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .header-sp {
+    display: none;
+  }
+
   .about-images-img {
     width: calc(98% / 2);
     margin-bottom: 2%;
@@ -304,5 +308,41 @@ img {
   .contact-form-btn {
     margin-top: 5%;
   }
+}
+/* スクロールCSS */
+.fade-in {
+  opacity: 0;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
+}
+
+.fade-in-up {
+  -webkit-transform: translate(0, 50px);
+          transform: translate(0, 50px);
+}
+
+.fade-in-down {
+  -webkit-transform: translate(0, -50px);
+          transform: translate(0, -50px);
+}
+
+.fade-in-left {
+  -webkit-transform: translate(-50px, 0);
+          transform: translate(-50px, 0);
+}
+
+.fade-in-right {
+  -webkit-transform: translate(50px, 0);
+          transform: translate(50px, 0);
+}
+
+.scroll-in {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 /*# sourceMappingURL=styles.css.map */
